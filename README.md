@@ -1,3 +1,4 @@
 # My-Catppuccin-Themed-Portfolio
 
-![Image Description](image_name.png)
+![Portfolio1](Portfolio1.png)
+![Portfolio2](Portfolio2.png)
