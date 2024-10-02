@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Your Catppuccin Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div id="custom-cursor"></div>
+
+  <header>
+    <div class="container">
+      <!-- Circular Image Holder -->
+      <div class="profile-picture">
+        <img src="pfp.jpeg" alt="Your Image">
+      </div>
+
+      <h1>Amiitesh Pradeep Kumar</h1>
+      <h2>Open Source Enthusiast | College Student | Expertise in Java</h2>
+      <p style="font-weight:bold">Creating the future, one line of code at a time.</p>
+
+      <div class="social-links">
+        <a href="https://www.instagram.com/tspamiitesh" target="_blank">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/instagram.svg" alt="Instagram" style="filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg);">
+        </a>
+        <a href="https://www.linkedin.com/in/amiitesh-pradeep-kumar-582bb831a/" target="_blank">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/linkedin.svg" alt="LinkedIn" style="filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg);">
+        </a>
+        <a href="https://github.com/Amiitesh-tsp" target="_blank">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/github.svg" alt="GitHub" style="filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg);">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2>About Me</h2>
+      <p>Hi there! I’m a tech enthusiast with a deep passion for Linux and its terminal commands. I love customizing my environment and exploring the vast capabilities of Linux, which allows me to work more efficiently and effectively.</p>
+      <p>As a dedicated Java programmer, I thrive on building robust applications and tackling complex problems. The elegance of Java's object-oriented principles inspires me to continually enhance my coding skills and explore new frameworks.</p>
+      <p>I also utilize Python for personal automation, creating scripts that streamline my daily tasks and simplify workflows. This versatility allows me to bring my ideas to life quickly and efficiently.</p>
+      <p>Additionally, I’m a strong advocate for open-source software. I believe in the power of community-driven projects and the importance of sharing knowledge. Contributing to open-source not only helps me grow but also allows me to connect with like-minded individuals.</p>
+      <p>I’m excited to share my journey in technology and collaborate on innovative projects. Let’s connect and explore the endless possibilities together!</p>
+    </section>
+
+    <section class="projects">
+      <h2>My Projects</h2>
+      <div class="project-cards">
+        <div class="project-card">
+          <h3>Project 1</h3>
+          <p>Not Yet</p>
+        </div>
+        <div class="project-card">
+          <h3>Project 2</h3>
+          <p>Not Yet</p>
+        </div>
+        <div class="project-card">
+          <h3>Project 3</h3>
+          <p>Not Yet</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<style>
+  /* Catppuccin-inspired colors */
+  :root {
+    --bg: #1E1E2E;
+    --bg-alt: #302D41;
+    --text: #D7DAE0;
+    --accent: #F38BA8;
+    --accent-light: #A6E3A1;
+    --highlight: #FAB387;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'iosevka', monospace;
+    background: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  .container {
+    text-align: center;
+    padding: 100px 20px;
+  }
+
+  /* Circular Image Holder */
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid var(--accent);
+  }
+
+  .profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  header {
+    background: var(--bg-alt);
+    color: var(--accent);
+    padding: 80px 0;
+  }
+
+  header h1 {
+    font-size: 58px;
+    margin-bottom: 20px;
+  }
+
+  header h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  header p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .social-links img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .social-links a:hover img {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 10px var(--accent));
+  }
+
+  .about, .projects {
+    padding: 50px 0;
+  }
+
+  .about h2, .projects h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: var(--highlight);
+  }
+
+  .project-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .project-card {
+    background: var(--bg-alt);
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(243, 139, 168, 0.3);
+    border-radius: 10px;
+    color: var(--text);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(243, 139, 168, 0.5);
+  }
+</style>
+</body>
+</html>
